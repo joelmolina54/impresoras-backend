@@ -1014,30 +1014,4 @@ app.listen(PORT, '0.0.0.0', () => {
 });
 
 
-app.listen(PORT, HOST, () => {
-  console.log(`===================================`);
-  console.log(`🚀 Servidor corriendo en:`);
-  console.log(`   Local: http://localhost:${PORT}`);
-  console.log(`   Red:   http://192.168.0.15:${PORT}`);
-  console.log(`===================================`);
-  console.log(`📡 Endpoints principales:`);
-  console.log(`   GET  /                         - Verificar estado`);
-  console.log(`   GET  /usuario                  - Listar usuarios`);
-  console.log(`   POST /usuario                  - Crear usuario`);
-  console.log(`   PUT  /usuario/:id              - Actualizar usuario`);
-  console.log(`   PUT  /usuario/:id/estado       - Cambiar estado usuario`);
-  console.log(`   DELETE /usuario/:id            - Eliminar usuario`);
-  console.log(`   GET  /crear-columnas-usuario   - Crear columnas faltantes`);
-  console.log(`   GET  /verificar-tablas         - Ver estructura tablas`);
-  console.log(`   POST /login                    - Login usuario`);
-  console.log(`   GET  /impresoras/verificar-codigo - Verificar código único`);
-  console.log(`   POST /impresoras               - Crear impresora`);
-  console.log(`   GET  /impresoras/generar-sugerencia - Sugerir código`);
-  console.log(`   GET  /crear-columna-fecha      - Crear columna fecha`);
-  console.log(`===================================`);
-  console.log(`⏰ Iniciado: ${new Date().toLocaleString()}`);
-  console.log(`===================================`);
-});
-
-
 
