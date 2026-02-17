@@ -1,0 +1,15 @@
+app.get('/test-db', (req, res) => {
+  db.query('SELECT 1 as test', (err, results) => {
+    if (err) {
+      console.error('Error test DB:', err);
+      return res.status(500).json({
+        error: 'Error conectando a la base de datos',
+        details: err.message
+      });
+    }
+    res.json({
+      db_connection: 'OK',
+      result: results[0]
+    });
+  });
+});
